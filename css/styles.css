@@ -1,0 +1,82 @@
+/* Estilo Institucional Surcos */
+:root {
+    --primary: #1f60be;
+    --bg-light: #f8fafc;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+/* Tipografía elegante para títulos */
+h1, h2, h3, h4, .font-serif {
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+/* Ajustes de Nav */
+#main-nav.scrolled {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(31, 96, 190, 0.95);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Estilo para el mapa de Google para que sea más limpio */
+#map {
+    filter: saturate(0.8) brightness(1.02);
+}
+/* Añadir a style.css */
+body {
+    opacity: 0; /* El script lo pondrá en 1 */
+    overflow-x: hidden;
+}
+/* Estilo adicional para el banner */
+#cookie-banner {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Evitar que el banner tape el botón de 'ir arriba' si lo tienes */
+@media (max-width: 768px) {
+    #cookie-banner {
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+    }
+}
+/* Fuente Humanista */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,400;1,700&display=swap');
+
+h1, h2, .font-serif {
+    font-family: 'Crimson Pro', serif;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Transición suave entre páginas */
+a {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Ocultar barra de scroll lateral */
+.overflow-x-hidden {
+    max-width: 100%;
+}
+/* Ajuste global para títulos en móviles */
+h2 {
+    @apply text-3xl leading-tight; /* Un poco más pequeño y con espacio entre líneas */
+}
+
+@media (min-width: 768px) {
+    h2 {
+        @apply text-5xl; /* Tamaño original en tablets y PCs */
+    }
+}
+
+/* Margen de seguridad para secciones con ID (por si usas enlaces internos) */
+section {
+    scroll-margin-top: 100px;
+}

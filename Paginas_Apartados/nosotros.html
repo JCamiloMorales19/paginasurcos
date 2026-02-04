@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagenes/logo_surcos.jpeg">
+    <title>Nosotros | Corporación Surcos</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css?v=2026">
+    <style>
+        body { opacity: 0; transition: opacity 0.5s ease; overflow-x: hidden; }
+        .value-tag {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
+        }
+        .value-tag:hover {
+            background: #1f60be;
+            border-color: #1f60be;
+            transform: translateY(-5px);
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+
+<nav id="main-nav" class="fixed w-full z-50 bg-[#1f60be] text-white py-4 shadow-lg transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <a href="../index.html" class="relative z-[60]">
+            <img src="../imagenes/logo_surcos.jpeg" class="h-10 md:h-14" alt="Logo">
+        </a>
+
+        <button id="menu-btn" class="lg:hidden relative z-[60] p-2 outline-none">
+            <i class="fas fa-bars text-2xl" id="menu-icon"></i>
+        </button>
+
+        <div class="hidden lg:flex space-x-5 items-center text-[10px] font-bold uppercase tracking-widest">
+            <a href="../index.html" class="hover:text-blue-200 transition">Inicio</a>
+            <a href="nosotros.html" class="border-b-2 border-white pb-1">Nosotros</a>
+            <a href="eventos.html" class="hover:text-blue-200 transition">Eventos</a>
+            <a href="tips.html" class="hover:text-blue-200 transition">Tips</a>
+            <a href="colaboradores.html" class="hover:text-blue-200 transition">Colaboradores</a>
+            <a href="aliados.html" class="hover:text-blue-200 transition">Aliados</a>
+            <a href="testimonios.html" class="hover:text-blue-200 transition">Testimonios</a>
+            <a href="contacto.html" class="hover:text-blue-200 transition">Contacto</a>
+            <a href="donar.html" class="bg-white text-[#1f60be] px-5 py-2 rounded-full font-black ml-4 shadow-md hover:bg-blue-50 transition">Donar</a>
+        </div>
+
+        <div id="mobile-menu" class="fixed inset-0 bg-[#1f60be] z-[55] flex flex-col items-center justify-center space-y-6 text-lg font-bold uppercase tracking-widest transform translate-x-full transition-transform duration-300 lg:hidden">
+            <a href="../index.html">Inicio</a>
+            <a href="nosotros.html" class="text-blue-200">Nosotros</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="tips.html">Tips</a>
+            <a href="colaboradores.html">Colaboradores</a>
+            <a href="aliados.html">Aliados</a>
+            <a href="testimonios.html">Testimonios</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="donar.html" class="bg-white text-[#1f60be] px-10 py-3 rounded-full font-black mt-4">Donar</a>
+        </div>
+    </div>
+</nav>
+
+<section class="pt-32 md:pt-48 pb-20 px-6 min-h-screen">
+    <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-[#1f60be] font-black uppercase tracking-[0.3em] text-[10px] mb-4 block" data-aos="fade-up">Nuestra Esencia</span>
+            <h2 class="text-4xl md:text-5xl font-serif italic text-slate-800" data-aos="fade-up" data-aos-delay="100">Identidad Corporativa</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-xl border border-slate-50 relative group" data-aos="fade-right">
+                <div class="w-14 h-14 bg-blue-50 text-[#1f60be] rounded-2xl flex items-center justify-center mb-8 transform group-hover:rotate-12 transition-transform">
+                    <i class="fas fa-bullseye text-2xl"></i>
+                </div>
+                <h3 class="text-xs font-black text-[#1f60be] mb-4 uppercase tracking-[0.2em]">Nuestra Misión</h3>
+                <p class="text-slate-600 italic leading-relaxed font-light text-lg">
+                    Promover el desarrollo integral de comunidades vulnerables, orientando nuestro trabajo al desarrollo de la familia y comunidades, logrando una buena calidad de vida, bienestar integral y sostenibilidad de las mismas mediante el trabajo integral, responsable y multidisciplinario de la Corporación.
+                    Así mismo propender por la educación y el cumplimiento de los derechos humanos, en especial sexuales y reproductivos, como también promover estrategias que redunden en la salud emocional, psicológica y mental en todas y cada una de las poblaciones que son atendidas, procurando desarrollar el liderazgo, la educación y la autogestión como herramientas para lograr la superación de cualquier dificultad con trabajo profesional, interdisciplinario, académico, institucional y alianzas estratégicas. 
+                </p>
+            </div>
+
+            <div class="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-xl border border-slate-50 relative group" data-aos="fade-left">
+                <div class="w-14 h-14 bg-blue-50 text-[#1f60be] rounded-2xl flex items-center justify-center mb-8 transform group-hover:-rotate-12 transition-transform">
+                    <i class="fas fa-eye text-2xl"></i>
+                </div>
+                <h3 class="text-xs font-black text-[#1f60be] mb-4 uppercase tracking-[0.2em]">Nuestra Visión</h3>
+                <p class="text-slate-600 italic leading-relaxed font-light text-lg">
+                  Para el 2032 La corporación de desarrollo social SURCOS, será reconocida a nivel regional, nacional e internacional, como una corporación con un alto grado de credibilidad y respeto, que sea ejemplo en liderar e impulsar el desarrollo de acciones y estrategias en pro de apoyar a comunidades vulnerables llevando a cabo acciones que permitan impulsar el progreso de las familias y su entorno. 
+                </p>
+                
+            </div>
+            <div class="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-xl border border-slate-50 relative group" data-aos="fade-left">
+                 <div class="w-14 h-14 bg-blue-50 text-[#1f60be] rounded-2xl flex items-center justify-center mb-8 transform group-hover:-rotate-12 transition-transform">
+                 <i class="fas fa-bullseye text-2xl"></i> </div>
+                 <h3 class="text-xs font-black text-[#1f60be] mb-6 uppercase tracking-[0.2em]">Nuestros Objetivos</h3>
+                 <ul class="space-y-4">
+                 <li class="flex items-start gap-4 group/item">
+                 <span class="flex-shrink-0 w-6 h-6 bg-blue-100 text-[#1f60be] rounded-full flex items-center justify-center text-[10px] font-bold mt-1">1</span>
+                 <p class="text-slate-600 leading-relaxed font-light">
+                  Promover el desarrollo de la calidad de vida de las familias y comunidades en el cumplimiento de los derechos, especialmente en: salud, educación, vivienda, trabajo digno, justicia y paz.
+
+                 </p>
+                 </li>
+
+                <li class="flex items-start gap-4 group/item">
+                    <span class="flex-shrink-0 w-6 h-6 bg-blue-100 text-[#1f60be] rounded-full flex items-center justify-center text-[10px] font-bold mt-1">2</span>
+                    <p class="text-slate-600 leading-relaxed font-light">
+                        Fortalecer la salud física, mental y emocional de las familias y comunidades vulnerables, objeto de atención, propendiendo por el bienestar integral de las mismas. 
+                    </p>
+                </li>
+                <li class="flex items-start gap-4 group/item">
+                    <span class="flex-shrink-0 w-6 h-6 bg-blue-100 text-[#1f60be] rounded-full flex items-center justify-center text-[10px] font-bold mt-1">3</span>
+                    <p class="text-slate-600 leading-relaxed font-light">
+                        Diseñar proyectos en diferentes áreas del conocimiento, encaminadas el desarrollo de la familias y comunidades objeto de atención de la corporación. 
+                    </p>
+                </li>
+                                <li class="flex items-start gap-4 group/item">
+                    <span class="flex-shrink-0 w-6 h-6 bg-blue-100 text-[#1f60be] rounded-full flex items-center justify-center text-[10px] font-bold mt-1">4</span>
+                    <p class="text-slate-600 leading-relaxed font-light">
+                        Establecer alianzas estratégicas con diferentes organizaciones de índole nacional e internacional tanto del sector público como privado, que permitan el cumplimiento de nuestra misión. 
+                    </p>
+                </li>
+                </ul>
+           </div>
+                <div class="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-xl border border-slate-50 relative group" data-aos="fade-left">
+                 <div class="w-14 h-14 bg-blue-50 text-[#1f60be] rounded-2xl flex items-center justify-center mb-8 transform group-hover:-rotate-12 transition-transform">
+                 <i class="fas fa-bullseye text-2xl"></i> </div>
+                 <h3 class="text-xs font-black text-[#1f60be] mb-6 uppercase tracking-[0.2em]">Nuestros Valores Corporativos</h3>
+                 <ul class="space-y-4">
+                 <li class="flex items-start gap-4 group/item">
+                 <span class="flex-shrink-0 w-6 h-6 bg-blue-100 text-[#1f60be] rounded-full flex items-center justify-center text-[10px] font-bold mt-1">1</span>
+                 <p class="text-slate-600 leading-relaxed font-light">
+                    Generar una cultura de profesionalismo y respeto entre el equipo institucional y los usuarios.
+                 </p>
+                 </li>
+                <li class="flex items-start gap-4 group/item">
+                    <span class="flex-shrink-0 w-6 h-6 bg-blue-100 text-[#1f60be] rounded-full flex items-center justify-center text-[10px] font-bold mt-1">2</span>
+                    <p class="text-slate-600 leading-relaxed font-light">
+                    Humanización de la atención para la comunidad. 
+                    </p>
+                </li>
+                <li class="flex items-start gap-4 group/item">
+                    <span class="flex-shrink-0 w-6 h-6 bg-blue-100 text-[#1f60be] rounded-full flex items-center justify-center text-[10px] font-bold mt-1">3</span>
+                    <p class="text-slate-600 leading-relaxed font-light">
+                        Trabajo con calidad humano y confiabilidad en el equipo.
+                    </p>
+                </li>
+                    <li class="flex items-start gap-4 group/item">
+                    <span class="flex-shrink-0 w-6 h-6 bg-blue-100 text-[#1f60be] rounded-full flex items-center justify-center text-[10px] font-bold mt-1">4</span>
+                    <p class="text-slate-600 leading-relaxed font-light">
+                       Empatía para conocer la necesidad real de la comunidad. 
+                    </p>
+                </li>
+                    <li class="flex items-start gap-4 group/item">
+                    <span class="flex-shrink-0 w-6 h-6 bg-blue-100 text-[#1f60be] rounded-full flex items-center justify-center text-[10px] font-bold mt-1">5</span>
+                    <p class="text-slate-600 leading-relaxed font-light">
+                       Educación desde el ser, para fortalecer el desarrollo integral. 
+                    </p>
+                </li>
+                    </li>
+                    <li class="flex items-start gap-4 group/item">
+                    <span class="flex-shrink-0 w-6 h-6 bg-blue-100 text-[#1f60be] rounded-full flex items-center justify-center text-[10px] font-bold mt-1">6</span>
+                    <p class="text-slate-600 leading-relaxed font-light">
+                       Compartir conocimiento y experiencias del trabajo corporativo, como principio fundamental.
+                    </p>
+                </li>
+                
+                </ul>
+           </div>
+        </div>
+        
+
+        <div class="bg-slate-900 text-white p-10 md:p-16 rounded-[3rem] shadow-2xl relative overflow-hidden" data-aos="zoom-in">
+            <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-blue-600 rounded-full blur-[120px] opacity-10"></div>
+            
+            <h3 class="text-center mb-12 font-black tracking-[0.4em] uppercase text-[10px] text-blue-400">Valores Fundamentales</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="value-tag p-6 border border-white/10 rounded-2xl text-center">
+                    <i class="fas fa-shield-alt mb-3 block text-blue-400 opacity-50"></i>
+                    <span class="text-[10px] font-bold tracking-widest">INTEGRIDAD</span>
+                </div>
+                <div class="value-tag p-6 border border-white/10 rounded-2xl text-center">
+                    <i class="fas fa-heart mb-3 block text-blue-400 opacity-50"></i>
+                    <span class="text-[10px] font-bold tracking-widest">EMPATÍA</span>
+                </div>
+                <div class="value-tag p-6 border border-white/10 rounded-2xl text-center">
+                    <i class="fas fa-scale-balanced mb-3 block text-blue-400 opacity-50"></i>
+                    <span class="text-[10px] font-bold tracking-widest">JUSTICIA</span>
+                </div>
+                <div class="value-tag p-6 border border-white/10 rounded-2xl text-center">
+                    <i class="fas fa-handshake mb-3 block text-blue-400 opacity-50"></i>
+                    <span class="text-[10px] font-bold tracking-widest">TRANSPARENCIA</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-slate-900 text-white pt-20 pb-10 px-6 mt-20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 mb-16 text-center md:text-left">
+        
+        <div class="flex flex-col items-center md:items-start space-y-8">
+            <div class="bg-white p-4 rounded-[2.5rem] shadow-2xl transition-transform hover:scale-105 duration-300 inline-block">
+                <img src="../imagenes/logosurcos.jpg" class="h-24 md:h-28 w-auto object-contain" alt="Logo Corporación Surcos">
+            </div>
+            
+            <p class="text-slate-400 text-sm font-light leading-relaxed max-w-xs">
+                Comprometidos con el desarrollo social integral y los derechos humanos en el departamento del Tolima desde 2002.
+            </p>
+            
+            <div class="flex gap-6 text-2xl">
+                <a href="https://facebook.com/Corsurcos" target="_blank" class="text-slate-500 hover:text-blue-500 transition-all duration-300">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com/csurcos/" target="_blank" class="text-slate-500 hover:text-pink-500 transition-all duration-300">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="md:pl-10">
+            <h4 class="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-8">Explorar</h4>
+            <ul class="space-y-4 text-slate-400 text-sm font-medium">
+                <li><a href="eventos.html" class="hover:text-white hover:translate-x-2 inline-block transition-all duration-300">Agenda Social</a></li>
+                <li><a href="colaboradores.html" class="hover:text-white hover:translate-x-2 inline-block transition-all duration-300">Equipo Humano</a></li>
+                <li><a href="tips.html" class="hover:text-white hover:translate-x-2 inline-block transition-all duration-300">Tips de Salud</a></li>
+                <li><a href="donar.html" class="hover:text-white hover:translate-x-2 inline-block transition-all duration-300">Cómo Apoyar</a></li>
+                <li><a href="contacto.html" class="hover:text-white hover:translate-x-2 inline-block transition-all duration-300">Contacto</a></li>
+                <li class="pt-4"><a href="../index.html" class="text-[#1f60be] font-bold hover:text-blue-400 transition-colors underline underline-offset-8">← Volver al Inicio</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-8">Ubicación</h4>
+            <ul class="space-y-6 text-sm font-light text-slate-400">
+                <li class="flex items-start gap-4 justify-center md:justify-start group">
+                    <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                        <i class="fas fa-map-marker-alt text-xs text-blue-400 group-hover:text-white"></i>
+                    </div>
+                    <span class="flex-1">Barrio Jordán Etapa I, Ibagué – Tolima</span>
+                </li>
+                
+                <li class="flex items-center gap-4 justify-center md:justify-start group">
+                    <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-green-600 transition-colors">
+                        <i class="fas fa-phone-alt text-xs text-blue-400 group-hover:text-white"></i>
+                    </div>
+                    <a href="tel:+573142289894" class="hover:text-white transition-colors">+57 314 228 9894</a>
+                </li>
+
+                <li class="flex items-center gap-4 justify-center md:justify-start group">
+                    <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                        <i class="fas fa-envelope text-xs text-blue-400 group-hover:text-white"></i>
+                    </div>
+                    <a href="mailto:surcossurcos@gmail.com" class="hover:text-white transition-colors">surcossurcos@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-8 border-t border-slate-800/50 text-center">
+        <p class="text-[9px] text-slate-500 uppercase tracking-[0.4em]">
+            © 2026 CORPORACIÓN SURCOS · TODOS LOS DERECHOS RESERVADOS
+        </p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../java/main.js?v=2026"></script>
+<script>
+    AOS.init({ duration: 800, once: true });
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.style.opacity = "1";
+    });
+</script>
+</body>
+</html>

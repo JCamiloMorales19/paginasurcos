@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../admin/Vistas/img/generales/570.png">
+    <title>Contacto | Corporación Surcos</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css?v=2026">
+    <style>
+        body { opacity: 0; transition: opacity 0.5s ease; overflow-x: hidden; }
+        .mobile-link { transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-slate-50">
+
+<nav id="main-nav" class="fixed w-full z-50 bg-[#1f60be] text-white py-4 shadow-lg transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <a href="../index.html" class="relative z-[60]">
+            <img src="../imagenes/logo_surcos.jpeg" class="h-10 md:h-14" alt="Logo">
+        </a>
+
+        <button id="menu-btn" class="lg:hidden relative z-[60] p-2 outline-none">
+            <i class="fas fa-bars text-2xl" id="menu-icon"></i>
+        </button>
+
+        <div class="hidden lg:flex space-x-5 items-center text-[10px] font-bold uppercase tracking-widest">
+            <a href="../index.html" class="hover:text-blue-200 transition">Inicio</a>
+            <a href="nosotros.html" class="hover:text-blue-200 transition">Nosotros</a>
+            <a href="eventos.html" class="hover:text-blue-200 transition">Eventos</a>
+            <a href="tips.html" class="hover:text-blue-200 transition">Tips</a>
+            <a href="colaboradores.html" class="hover:text-blue-200 transition">Colaboradores</a>
+            <a href="aliados.html" class="hover:text-blue-200 transition">Aliados</a>
+            <a href="testimonios.html" class="hover:text-blue-200 transition">Testimonios</a>
+            <a href="contacto.html" class="border-b-2 border-white pb-1">Contacto</a>
+            <a href="donar.html" class="bg-white text-[#1f60be] px-5 py-2 rounded-full font-black ml-4 shadow-md hover:bg-blue-50 transition">Donar</a>
+        </div>
+
+        <div id="mobile-menu" class="fixed inset-0 bg-[#1f60be] z-[55] flex flex-col items-center justify-center space-y-6 text-lg font-bold uppercase tracking-widest transform translate-x-full transition-transform duration-300 lg:hidden">
+            <a href="../index.html" class="mobile-link">Inicio</a>
+            <a href="nosotros.html" class="mobile-link">Nosotros</a>
+            <a href="eventos.html" class="mobile-link">Eventos</a>
+            <a href="tips.html" class="mobile-link">Tips</a>
+            <a href="colaboradores.html" class="mobile-link">Colaboradores</a>
+            <a href="aliados.html" class="mobile-link">Aliados</a>
+            <a href="testimonios.html" class="mobile-link">Testimonios</a>
+            <a href="contacto.html" class="mobile-link text-blue-200">Contacto</a>
+            <a href="donar.html" class="bg-white text-[#1f60be] px-10 py-3 rounded-full font-black mt-4">Donar</a>
+        </div>
+    </div>
+</nav>
+
+<section class="pt-32 md:pt-48 pb-20 px-6 min-h-screen">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+        
+        <div class="bg-white p-6 md:p-10 rounded-3xl shadow-xl order-2 md:order-1" data-aos="fade-right">
+            <h3 class="text-3xl font-serif font-bold mb-6 italic text-slate-800 text-center md:text-left">Escríbenos</h3>
+            <p class="text-slate-500 mb-8 font-light text-sm text-center md:text-left">Completa el formulario y nuestro equipo te contactará pronto.</p>
+            
+            <form action="enviar.php" method="POST" class="space-y-4">
+                <input type="text" name="nombre" required placeholder="Nombre completo" class="w-full p-4 bg-slate-50 rounded-xl outline-none border border-transparent focus:border-blue-500 transition text-sm">
+                <input type="email" name="email" required placeholder="Correo electrónico" class="w-full p-4 bg-slate-50 rounded-xl outline-none border border-transparent focus:border-blue-500 transition text-sm">
+                <input type="text" name="asunto" placeholder="Asunto" class="w-full p-4 bg-slate-50 rounded-xl outline-none border border-transparent focus:border-blue-500 transition text-sm">
+                <textarea name="mensaje" required placeholder="¿Cómo podemos ayudarte?" class="w-full p-4 h-32 bg-slate-50 rounded-xl outline-none border border-transparent focus:border-blue-500 transition text-sm"></textarea>
+                <button type="submit" class="w-full bg-[#1f60be] text-white py-4 rounded-xl font-bold uppercase tracking-widest shadow-lg hover:bg-blue-800 transition-all hover:-translate-y-1">Enviar Mensaje</button>
+            </form>
+        </div>
+
+        <div class="text-slate-600 order-1 md:order-2" data-aos="fade-left">
+            <h3 class="text-3xl font-serif font-bold mb-6 italic text-slate-800 text-center md:text-left">Nuestra Sede</h3>
+            <div class="space-y-6 mb-10">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-blue-100 text-[#1f60be] rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <p class="text-sm">Manzana 13 casa 23 Barrio Jordán Etapa I, Ibagué – Tolima</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-blue-100 text-[#1f60be] rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <a href="tel:+573142289894" class="text-sm hover:text-[#1f60be] transition">+57 314 228 9894</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-blue-100 text-[#1f60be] rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <a href="mailto:surcossurcos@gmail.com" class="text-sm hover:text-[#1f60be] transition">surcossurcos@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="h-64 md:h-80 bg-slate-200 rounded-3xl overflow-hidden shadow-inner border-4 border-white">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.71234!2d-75.188!3d4.43!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwMjUnNDguMCJOIDc1wrAxMScxNi44Ilc!5e0!3m2!1ses!2sco!4v123456789" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-slate-900 text-white pt-20 pb-10 px-6 mt-20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 mb-16 text-center md:text-left">
+        
+        <div class="flex flex-col items-center md:items-start space-y-8">
+            <div class="bg-white p-4 rounded-[2.5rem] shadow-2xl transition-transform hover:scale-105 duration-300 inline-block">
+                <img src="../imagenes/logo_surcos.jpeg" class="h-24 md:h-28 w-auto object-contain" alt="Logo Corporación Surcos">
+            </div>
+            
+            <p class="text-slate-400 text-sm font-light leading-relaxed max-w-xs">
+                Estamos aquí para escucharte. Únete a nuestra labor y ayúdanos a seguir sembrando bienestar en el Tolima.
+            </p>
+            
+            <div class="flex gap-6 text-2xl">
+                <a href="https://facebook.com/Corsurcos" target="_blank" class="text-slate-500 hover:text-blue-500 transition-all duration-300">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com/csurcos/" target="_blank" class="text-slate-500 hover:text-pink-500 transition-all duration-300">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="md:pl-10">
+            <h4 class="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-8">Explorar</h4>
+            <ul class="space-y-4 text-slate-400 text-sm font-medium">
+                <li><a href="eventos.html" class="hover:text-white hover:translate-x-2 inline-block transition-all duration-300">Agenda Social</a></li>
+                <li><a href="colaboradores.html" class="hover:text-white hover:translate-x-2 inline-block transition-all duration-300">Equipo Humano</a></li>
+                <li><a href="tips.html" class="hover:text-white hover:translate-x-2 inline-block transition-all duration-300">Tips de Salud</a></li>
+                <li><a href="donar.html" class="hover:text-white hover:translate-x-2 inline-block transition-all duration-300">Cómo Apoyar</a></li>
+                <li><a href="contacto.html" class="hover:text-white hover:translate-x-2 inline-block transition-all duration-300">Contacto</a></li>
+                <li class="pt-4"><a href="../index.html" class="text-[#1f60be] font-bold hover:text-blue-400 transition-colors underline underline-offset-8">← Volver al Inicio</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-8">Ubicación y Atención</h4>
+            <ul class="space-y-6 text-sm font-light text-slate-400">
+                <li class="flex items-start gap-4 justify-center md:justify-start group">
+                    <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                        <i class="fas fa-map-marker-alt text-xs text-blue-400 group-hover:text-white"></i>
+                    </div>
+                    <span class="flex-1">Manzana 13 casa 23 piso 1<br><span class="text-slate-500">Barrio Jordán Etapa I, Ibagué</span></span>
+                </li>
+                
+                <li class="flex items-center gap-4 justify-center md:justify-start group">
+                    <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-green-600 transition-colors">
+                        <i class="fas fa-phone-alt text-xs text-blue-400 group-hover:text-white"></i>
+                    </div>
+                    <a href="https://wa.me/573142289894" target="_blank" class="hover:text-white transition-colors">+57 314 228 9894</a>
+                </li>
+
+                <li class="flex items-center gap-4 justify-center md:justify-start group">
+                    <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                        <i class="fas fa-envelope text-xs text-blue-400 group-hover:text-white"></i>
+                    </div>
+                    <a href="mailto:surcossurcos@gmail.com" class="hover:text-white transition-colors">surcossurcos@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-8 border-t border-slate-800/50 text-center">
+        <p class="text-[9px] text-slate-500 uppercase tracking-[0.4em]">
+            © 2026 CORPORACIÓN SURCOS · CONECTANDO COMUNIDADES
+        </p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../java/main.js?v=2026"></script>
+<script>
+    AOS.init({ duration: 800, once: true });
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.style.opacity = "1";
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagenes/logo_surcos.jpeg">
+    <title>Tips de Salud | Corporación Surcos</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css?v=2026">
+    <style>
+        body { opacity: 0; transition: opacity 0.5s ease; overflow-x: hidden; }
+        .tip-card { 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .tip-card:hover { 
+            transform: translateX(10px);
+            background-color: #fff;
+        }
+        .icon-blob {
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+
+<nav id="main-nav" class="fixed w-full z-50 bg-[#1f60be] text-white py-4 shadow-lg transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <a href="../index.html" class="relative z-[60]">
+            <img src="../imagenes/logo_surcos.jpeg" class="h-10 md:h-14" alt="Logo">
+        </a>
+
+        <button id="menu-btn" class="lg:hidden relative z-[60] p-2 outline-none">
+            <i class="fas fa-bars text-2xl" id="menu-icon"></i>
+        </button>
+
+        <div class="hidden lg:flex space-x-5 items-center text-[10px] font-bold uppercase tracking-widest">
+            <a href="../index.html" class="hover:text-blue-200 transition">Inicio</a>
+            <a href="nosotros.html" class="hover:text-blue-200 transition">Nosotros</a>
+            <a href="eventos.html" class="hover:text-blue-200 transition">Eventos</a>
+            <a href="tips.html" class="border-b-2 border-white pb-1">Tips</a>
+            <a href="colaboradores.html" class="hover:text-blue-200 transition">Colaboradores</a>
+            <a href="aliados.html" class="hover:text-blue-200 transition">Aliados</a>
+            <a href="testimonios.html" class="hover:text-blue-200 transition">Testimonios</a>
+            <a href="contacto.html" class="hover:text-blue-200 transition">Contacto</a>
+            <a href="donar.html" class="bg-white text-[#1f60be] px-5 py-2 rounded-full font-black ml-4 shadow-md hover:bg-blue-50 transition">Donar</a>
+        </div>
+
+        <div id="mobile-menu" class="fixed inset-0 bg-[#1f60be] z-[55] flex flex-col items-center justify-center space-y-6 text-lg font-bold uppercase tracking-widest transform translate-x-full transition-transform duration-300 lg:hidden">
+            <a href="../index.html" class="mobile-link">Inicio</a>
+            <a href="nosotros.html" class="mobile-link">Nosotros</a>
+            <a href="eventos.html" class="mobile-link">Eventos</a>
+            <a href="tips.html" class="mobile-link text-blue-200">Tips</a>
+            <a href="colaboradores.html" class="mobile-link">Colaboradores</a>
+            <a href="aliados.html" class="mobile-link">Aliados</a>
+            <a href="testimonios.html" class="mobile-link">Testimonios</a>
+            <a href="contacto.html" class="mobile-link">Contacto</a>
+            <a href="donar.html" class="bg-white text-[#1f60be] px-10 py-3 rounded-full font-black mt-4">Donar</a>
+        </div>
+    </div>
+</nav>
+
+    <section class="pt-32 md:pt-48 pb-20 px-6 min-h-screen">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-[#1f60be] font-black uppercase tracking-[0.3em] text-[10px] mb-4 block" data-aos="fade-up">Bienestar Integral</span>
+                <h2 class="text-4xl md:text-5xl font-serif italic text-slate-800" data-aos="fade-up" data-aos-delay="100">Consejos y Salud</h2>
+                <p class="text-slate-500 mt-4 font-light max-w-xl mx-auto">Pequeñas acciones diarias que transforman tu calidad de vida y fortalecen tu salud preventiva.</p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="tip-card bg-white/60 backdrop-blur-sm p-8 md:p-10 rounded-[2.5rem] border-l-[12px] border-[#1f60be] shadow-sm hover:shadow-xl flex flex-col md:flex-row gap-8 items-center" data-aos="fade-up">
+                    <div class="icon-blob bg-blue-100 w-24 h-24 flex items-center justify-center shrink-0">
+                        <i class="fas fa-heartbeat text-4xl text-[#1f60be]"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="px-3 py-1 bg-blue-50 text-[#1f60be] text-[9px] font-black uppercase rounded-full">Salud Preventiva</span>
+                            <span class="text-slate-300 text-[10px] uppercase font-bold tracking-widest">Recomendado</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-slate-800">Chequeos Periódicos</h4>
+                        <p class="text-slate-500 mt-3 text-sm leading-relaxed font-light">
+                            Realizar chequeos médicos al menos una vez al año es la herramienta más poderosa de prevención. Detectar a tiempo cualquier anomalía marca la diferencia en el éxito de cualquier tratamiento.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tip-card bg-white/60 backdrop-blur-sm p-8 md:p-10 rounded-[2.5rem] border-l-[12px] border-emerald-500 shadow-sm hover:shadow-xl flex flex-col md:flex-row gap-8 items-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-blob bg-emerald-100 w-24 h-24 flex items-center justify-center shrink-0">
+                        <i class="fas fa-apple-alt text-4xl text-emerald-600"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="px-3 py-1 bg-emerald-50 text-emerald-600 text-[9px] font-black uppercase rounded-full">Nutrición</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-slate-800">Alimentación Consciente</h4>
+                        <p class="text-slate-500 mt-3 text-sm leading-relaxed font-light">
+                            Prioriza alimentos naturales sobre los procesados. Una dieta rica en colores (frutas y verduras) garantiza un espectro completo de vitaminas que fortalecen tu sistema inmunológico de forma natural.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tip-card bg-white/60 backdrop-blur-sm p-8 md:p-10 rounded-[2.5rem] border-l-[12px] border-purple-500 shadow-sm hover:shadow-xl flex flex-col md:flex-row gap-8 items-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-blob bg-purple-100 w-24 h-24 flex items-center justify-center shrink-0">
+                        <i class="fas fa-spa text-4xl text-purple-600"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="px-3 py-1 bg-purple-50 text-purple-600 text-[9px] font-black uppercase rounded-full">Mente Sana</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-slate-800">Gestión del Estrés</h4>
+                        <p class="text-slate-500 mt-3 text-sm leading-relaxed font-light">
+                            Dedica al menos 15 minutos al día a la desconexión digital. La salud mental es el pilar del bienestar físico; practicar la respiración consciente reduce los niveles de cortisol y mejora el ánimo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 text-white p-10 md:p-14 rounded-[3.5rem] shadow-2xl relative overflow-hidden mt-12 group" data-aos="zoom-in">
+                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-blue-600 rounded-full blur-[80px] opacity-30 group-hover:opacity-50 transition duration-700"></div>
+                    <div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+                        <div class="max-w-md">
+                            <span class="text-blue-400 font-black text-[10px] uppercase tracking-[0.4em] mb-4 block">Capacitación</span>
+                            <h4 class="text-3xl font-serif italic mb-3">¿Deseas profundizar en estos temas?</h4>
+                            <p class="text-slate-400 text-sm font-light leading-relaxed">Únete a nuestras brigadas de salud y talleres comunitarios. La educación es el primer paso para una vida saludable.</p>
+                        </div>
+                        <a href="eventos.html" class="bg-[#1f60be] hover:bg-white hover:text-[#1f60be] px-10 py-4 rounded-full font-black text-[11px] uppercase tracking-[0.2em] transition-all duration-300 shadow-lg whitespace-nowrap">
+                            Ver Programación <i class="fas fa-arrow-right ml-2 text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer class="bg-slate-900 text-white pt-20 pb-10 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 mb-16 text-center md:text-left">
+        
+        <div class="flex flex-col items-center md:items-start space-y-8">
+            <div class="bg-white p-4 rounded-[2.5rem] shadow-2xl transition-transform hover:scale-105 duration-300 inline-block">
+                <img src="../imagenes/logosurcos.jpg" class="h-24 md:h-28 w-auto object-contain" alt="Logo Corporación Surcos">
+            </div>
+            
+            <p class="text-slate-400 text-sm font-light leading-relaxed max-w-xs">
+                Transformando realidades en el Tolima mediante la salud integral, la educación y la defensa de los derechos humanos.
+            </p>
+            
+            <div class="flex gap-6 text-2xl">
+                <a href="https://facebook.com/Corsurcos" target="_blank" class="text-slate-500 hover:text-blue-500 transition-all duration-300">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com/csurcos/" target="_blank" class="text-slate-500 hover:text-pink-500 transition-all duration-300">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:surcossurcos@gmail.com" class="text-slate-500 hover:text-white transition-all duration-300">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="md:pl-10">
+            <h4 class="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-8">Explorar</h4>
+            <ul class="space-y-4 text-slate-400 text-sm font-medium">
+                <li><a href="eventos.html" class="hover:text-white hover:translate-x-2 inline-block transition-all duration-300">Agenda Social</a></li>
+                <li><a href="colaboradores.html" class="hover:text-white hover:translate-x-2 inline-block transition-all duration-300">Equipo Humano</a></li>
+                <li><a href="tips.html" class="hover:text-white hover:translate-x-2 inline-block transition-all duration-300">Tips de Salud</a></li>
+                <li><a href="donar.html" class="hover:text-white hover:translate-x-2 inline-block transition-all duration-300">Cómo Apoyar</a></li>
+                <li><a href="contacto.html" class="hover:text-white hover:translate-x-2 inline-block transition-all duration-300">Contacto</a></li>
+                <li class="pt-4"><a href="../index.html" class="text-[#1f60be] font-bold hover:text-blue-400 transition-colors underline underline-offset-8">← Volver al Inicio</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-8">Ubícanos</h4>
+            <div class="space-y-6 text-slate-400 text-sm font-light">
+                <div class="flex items-start gap-4 justify-center md:justify-start group">
+                    <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                        <i class="fas fa-map-marker-alt text-xs text-blue-400 group-hover:text-white"></i>
+                    </div>
+                    <span class="flex-1">Barrio Jordán Etapa I, Ibagué – Tolima</span>
+                </div>
+                
+                <div class="flex items-center gap-4 justify-center md:justify-start group">
+                    <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-green-600 transition-colors">
+                        <i class="fas fa-phone-alt text-xs text-blue-400 group-hover:text-white"></i>
+                    </div>
+                    <a href="https://wa.me/573142289894" target="_blank" class="hover:text-white transition-colors">+57 314 228 9894</a>
+                </div>
+
+                <div class="flex items-center gap-4 justify-center md:justify-start group">
+                    <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                        <i class="fas fa-certificate text-xs text-blue-400 group-hover:text-white"></i>
+                    </div>
+                    <span>NIT: 809.011.691-5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-10 border-t border-white/5 text-center">
+        <p class="text-[10px] text-slate-600 uppercase tracking-[0.5em]">
+            © 2026 CORPORACIÓN SURCOS · INNOVACIÓN SOCIAL
+        </p>
+    </div>
+</footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../java/main.js?v=2026"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+        document.addEventListener("DOMContentLoaded", () => {
+            document.body.style.opacity = "1";
+        });
+    </script>
+</body>
+</html>
